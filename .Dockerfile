@@ -24,14 +24,14 @@ RUN pip install --upgrade pip wheel && pip install pipenv
 COPY Pipfile .
 COPY Pipfile.lock .
 
+# Print Python version for debugging
+RUN python --version
+
 # Install Python dependencies using pipenv
 RUN PIPENV_VENV_IN_PROJECT=1 pipenv install --system
 
 # Run a test import to trigger Cython compilation (optional)
 RUN echo 'from xisearch2.cython import *' | python || true
-
-# Print Python version for debugging
-RUN python --version
 
 # Create non-root user and switch to it
 RUN useradd --create-home appuser
