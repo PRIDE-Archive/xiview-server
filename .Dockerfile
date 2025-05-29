@@ -1,32 +1,45 @@
 FROM python:3.10-slim as build-stage
 
-# Setup env
-ENV LANG C.UTF-8
-ENV LC_ALL C.UTF-8
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONFAULTHANDLER 1
-ENV FLASK_DEBUG production
+# Setup environment
+ENV LANG=C.UTF-8 \
+    LC_ALL=C.UTF-8 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONFAULTHANDLER=1 \
+    FLASK_DEBUG=production
 
-COPY *.whl .
+# Install system-level build tools and Python headers
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    python3-dev \
+    libffi-dev \
+    libssl-dev \
+    gcc \
+    g++ \
+    && rm -rf /var/lib/apt/lists/*
 
-# Install pipenv and compilation dependencies
-RUN apt-get update && apt-get install -y gcc g++
-RUN python3 -m pip install wheel pip --upgrade && pip install pipenv
-RUN apt-get update && apt-get install
+# Upgrade pip and install pipenv
+RUN pip install --upgrade pip wheel && pip install pipenv
 
+# Copy Python requirements
 COPY Pipfile .
 COPY Pipfile.lock .
+
+# Install Python dependencies using pipenv
 RUN PIPENV_VENV_IN_PROJECT=1 pipenv install --system
 
-RUN echo 'from xisearch2.cython import *; ' | python
+# Run a test import to trigger Cython compilation (optional)
+RUN echo 'from xisearch2.cython import *' | python || true
 
-# Create and switch to a new user to ensure security
+# Print Python version for debugging
+RUN python --version
+
+# Create non-root user and switch to it
 RUN useradd --create-home appuser
 WORKDIR /home/appuser
 USER appuser
 RUN mkdir -p /home/appuser/logs
 
-# Install application into container
+# Copy application source code
 COPY static ./static
 COPY templates ./templates
 COPY tests ./tests
@@ -36,7 +49,5 @@ COPY default.database.ini .
 COPY logging.ini .
 COPY .kubernetes.yml .
 
-#FROM base AS production
 # Run the application
-#CMD ["python" ,"-m" ,"flask", "run","--host=0.0.0.0"]
-ENTRYPOINT waitress-serve --port ${PORT} --url-prefix ${URL_PREFIX} --call ${APP_ENTRY}
+ENTRYPOINT ["waitress-serve", "--port", "${PORT}", "--url-prefix", "${URL_PREFIX}", "--call", "${APP_ENTRY}"]
