@@ -9,12 +9,20 @@ ENV LANG=C.UTF-8 \
 
 # Install system-level build tools and Python headers
 RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
     build-essential \
     python3-dev \
     libffi-dev \
     libssl-dev \
-    gcc \
-    g++ \
+    libxml2-dev \
+    libxslt1-dev \
+    zlib1g-dev \
+    libbz2-dev \
+    libreadline-dev \
+    libsqlite3-dev \
+    curl \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
 # Upgrade pip and install pipenv
@@ -25,7 +33,7 @@ COPY Pipfile .
 COPY Pipfile.lock .
 
 # Print Python version for debugging
-RUN python --version
+RUN python --version && pip --version && gcc --version
 
 # Install Python dependencies using pipenv
 RUN PIPENV_VENV_IN_PROJECT=1 pipenv install --system
