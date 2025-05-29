@@ -1,4 +1,4 @@
-FROM python:3.10-slim as build-stage
+FROM python:3.9-slim as build-stage
 
 # Setup environment
 ENV LANG=C.UTF-8 \
@@ -9,31 +9,25 @@ ENV LANG=C.UTF-8 \
 
 # Install system-level build tools and Python headers
 RUN apt-get update && apt-get install -y \
-    gcc \
-    g++ \
     build-essential \
     python3-dev \
     libffi-dev \
     libssl-dev \
-    libxml2-dev \
-    libxslt1-dev \
-    zlib1g-dev \
-    libbz2-dev \
-    libreadline-dev \
-    libsqlite3-dev \
-    curl \
-    git \
+    gcc \
+    g++ \
     && rm -rf /var/lib/apt/lists/*
 
 # Upgrade pip and install pipenv
 RUN pip install --upgrade pip wheel && pip install pipenv
+RUN pip install --force-reinstall "cython==3.0.*"
 
 # Copy Python requirements
 COPY Pipfile .
 COPY Pipfile.lock .
+COPY xisearch*.whl .
 
 # Print Python version for debugging
-RUN python --version && pip --version && gcc --version
+RUN python --version
 
 # Install Python dependencies using pipenv
 RUN PIPENV_VENV_IN_PROJECT=1 pipenv install --system
