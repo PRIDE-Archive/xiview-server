@@ -34,6 +34,8 @@ RUN PIPENV_VENV_IN_PROJECT=1 pipenv install --system
 
 # Run a test import to trigger Cython compilation (optional)
 RUN echo 'from xisearch2.cython import *' | python || true
+RUN python -c "import click, waitress, flask; print('Dependencies installed!')"
+
 
 # Create non-root user and switch to it
 RUN useradd --create-home appuser
