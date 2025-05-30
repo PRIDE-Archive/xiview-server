@@ -52,4 +52,5 @@ COPY logging.ini .
 COPY .kubernetes.yml .
 
 # Run the application
-ENTRYPOINT ["waitress-serve", "--port", "${PORT}", "--url-prefix", "${URL_PREFIX}", "--call", "${APP_ENTRY}"]
+#ENTRYPOINT ["waitress-serve", "--port", "${PORT}", "--url-prefix", "${URL_PREFIX}", "--call", "${APP_ENTRY}"]
+ENTRYPOINT waitress-serve --port ${PORT} --url-prefix ${URL_PREFIX} --call ${APP_ENTRY}
