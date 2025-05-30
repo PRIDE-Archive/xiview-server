@@ -11,7 +11,8 @@ psycopg2-binary = "2.9.5"
 python-dotenv = "*"
 waitress = "*"
 zipfile_deflate64 = "*"
-xisearch2 = {path = "../xisearch2-2.0.3.dev140+g51ac331.d20250521-py3-none-any.whl"}
+xisearch2 = {path = "xisearch2-2.0.2-py3-none-any.whl"}
+click = "*"
 
 [dev-packages]
 pytest-cov = "*"
