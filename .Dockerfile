@@ -1,4 +1,4 @@
-FROM python:3.9-slim as build-stage
+FROM python:3.9-slim AS build-stage
 
 # Setup environment
 ENV LANG=C.UTF-8 \
@@ -7,6 +7,7 @@ ENV LANG=C.UTF-8 \
     PYTHONFAULTHANDLER=1 \
     FLASK_DEBUG=production
 
+COPY *.whl .
 # Install system-level build tools and Python headers
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -24,7 +25,6 @@ RUN pip install --force-reinstall "cython==3.0.*"
 # Copy Python requirements
 COPY Pipfile .
 COPY Pipfile.lock .
-COPY xisearch*.whl .
 
 # Print Python version for debugging
 RUN python --version
