@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d768cebbd947c1febebd815bce4c51e2ffe7241d76338d2cb7272802cbf0ba8c"
+            "sha256": "dc0708efc31c911fbbd3a5b1d919fd9dc5bb09c7342a2570688de31c9a1771f1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -237,12 +237,12 @@
         },
         "click": {
             "hashes": [
-                "sha256:27c491cc05d968d271d5a1db13e3b5a184636d9d930f148c50b038f0d0646202",
-                "sha256:61a3265b914e850b85317d0b3109c7f8cd35a670f963866005d6ef1d5175a12b"
+                "sha256:7682dc8afb30297001674575ea00d1814d808d6a36af415a82bd481d37ba7b8e",
+                "sha256:bb4d8133cb15a609f44e8213d9b391b0809795062913b383c62be0ee95b1db48"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.10'",
-            "version": "==8.2.1"
+            "markers": "python_version >= '3.7'",
+            "version": "==8.1.3"
         },
         "clr-loader": {
             "hashes": [
@@ -1382,12 +1382,12 @@
         },
         "click": {
             "hashes": [
-                "sha256:27c491cc05d968d271d5a1db13e3b5a184636d9d930f148c50b038f0d0646202",
-                "sha256:61a3265b914e850b85317d0b3109c7f8cd35a670f963866005d6ef1d5175a12b"
+                "sha256:7682dc8afb30297001674575ea00d1814d808d6a36af415a82bd481d37ba7b8e",
+                "sha256:bb4d8133cb15a609f44e8213d9b391b0809795062913b383c62be0ee95b1db48"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.10'",
-            "version": "==8.2.1"
+            "markers": "python_version >= '3.7'",
+            "version": "==8.1.3"
         },
         "coverage": {
             "extras": [
