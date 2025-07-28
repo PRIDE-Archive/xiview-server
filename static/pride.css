@@ -66,6 +66,10 @@
     border-left: 0;
 }
 
+#viewDropdownPlaceholder > div > ul > li:nth-child(10) {
+    display: none !important;
+}
+
 :root {
     /*--main-color:#091D42;*/
     /*--main-color:red;*/
