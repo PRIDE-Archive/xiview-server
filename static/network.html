@@ -13,13 +13,12 @@
 
         <meta name="description" content="common platform for downstream analysis of CLMS data" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+        <script type="text/javascript" src="./vendors.js"></script>
         <script type="text/javascript" src="./xiview.js"></script>
         <link rel="stylesheet" href="./pride.css" type="text/css" />
 
-        <title>network</title>
+        <title>crosslink network</title>
     </head>
 
     <body>
@@ -39,6 +38,7 @@
                 <i class="fa fa-home fa-xi"
                         onclick="window.open('http://xi.bioanalytik.tu-berlin.de:8001/');"
                         title="Return to search history / Login"></i>
+                    <p onclick="window.vent.trigger('pdbFileChooserShow', true);" class="btn dropdown"><span class="menuTitle">LOAD 3D STRUCTURE</span></p>
                     <p id="loadDropdownPlaceholder"></p>
                     <p id="viewDropdownPlaceholder"></p>
                     <p id="proteinSelectionDropdownPlaceholder"></p>

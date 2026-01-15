@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spectra</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="common platform for downstream analysis of CLMS data"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="./xiview.js"></script>
+</head>
+
+<body>
+<!-- Main -->
+<div id="main">
+    <div class="mainContent">
+        <div class="page-header">
+            <i class="fa fa-home fa-xi" onclick="window.location = 'http://xi.bioanalytik.tu-berlin.de:8001/';"
+               title="Return to search history"></i>
+            <span class="headerLabel">
+
+                    </span>
+            <p id="expDropdownPlaceholder"></p>
+            <button class='btn btn-1 btn-1a' onclick="window.location = './network.html'+window.location.search;"
+                    title="View results">Done
+            </button>
+        </div> <!-- page-header -->
+        <div id="topDiv"></div>
+        <div id="bottomDiv"></div>
+    </div>
+    <div class="controls">
+        <span id="filterPlaceholder"></span>
+    </div>
+</div><!-- end MAIN -->
+
+<script>
+    //<![CDATA[
+        xiview.validationPage("https://www.ebi.ac.uk/pride/ws/archive/crosslinking/v2/data/", "xiAnnotator/");
+    //]]>
+</script>
+</body>
+</html>

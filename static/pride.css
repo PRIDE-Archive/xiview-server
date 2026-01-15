@@ -6,10 +6,6 @@
     display: none !important;
 }
 
-#proteinSelectionDropdownPlaceholder {
-    display: none !important;
-}
-
 #groupsDropdownPlaceholder {
     display: none !important;
 }
@@ -18,23 +14,11 @@
     display: none !important;
 }
 
-#nglChkBxPlaceholder {
-    display: none !important;
-}
-
 #matrixChkBxPlaceholder {
     display: none !important;
 }
 
-#distoChkBxPlaceholder {
-    display: none !important;
-}
-
 #scatterplotChkBxPlaceholder {
-    display: none !important;
-}
-
-#alignChkBxPlaceholder {
     display: none !important;
 }
 
@@ -70,21 +54,9 @@
     display: none !important;
 }
 
-/*#main > div.controls {*/
-/*    display: none !important;*/
-/*}*/
-
-/*#main > div.mainContent {*/
-/*    bottom:0px;*/
-/*}*/
-
 #alternatives{
     display: none !important;
 }
-
-/*#bottomDivTopOnly {*/
-/*    display: none !important;*/
-/*}*/
 
 #displayOptionsPlaceholder {
     display: none !important;
@@ -94,7 +66,7 @@
     border-left: 0;
 }
 
-/*#helpDropdownPlaceholder > div > ul > li:nth-child(1) {*/
+/*#viewDropdownPlaceholder > div > ul > li:nth-child(10) {*/
 /*    display: none !important;*/
 /*}*/
 
