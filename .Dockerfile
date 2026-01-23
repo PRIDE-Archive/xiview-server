@@ -1,4 +1,4 @@
-FROM python:3.9-slim AS build-stage
+FROM python:3.10-slim AS build-stage
 
 # Setup environment
 ENV LANG=C.UTF-8 \
