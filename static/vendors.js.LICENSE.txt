@@ -10,7 +10,7 @@
  */
 
 /*!
- * jQuery UI :data 1.14.1
+ * jQuery UI :data 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -19,7 +19,7 @@
  */
 
 /*!
- * jQuery UI Button 1.14.1
+ * jQuery UI Button 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -28,7 +28,7 @@
  */
 
 /*!
- * jQuery UI Checkboxradio 1.14.1
+ * jQuery UI Checkboxradio 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -37,7 +37,7 @@
  */
 
 /*!
- * jQuery UI Controlgroup 1.14.1
+ * jQuery UI Controlgroup 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -46,7 +46,7 @@
  */
 
 /*!
- * jQuery UI Dialog 1.14.1
+ * jQuery UI Dialog 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -55,7 +55,7 @@
  */
 
 /*!
- * jQuery UI Disable Selection 1.14.1
+ * jQuery UI Disable Selection 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -64,7 +64,7 @@
  */
 
 /*!
- * jQuery UI Draggable 1.14.1
+ * jQuery UI Draggable 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -73,7 +73,7 @@
  */
 
 /*!
- * jQuery UI Focusable 1.14.1
+ * jQuery UI Focusable 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -82,7 +82,7 @@
  */
 
 /*!
- * jQuery UI Form Reset Mixin 1.14.1
+ * jQuery UI Form Reset Mixin 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -91,7 +91,7 @@
  */
 
 /*!
- * jQuery UI Keycode 1.14.1
+ * jQuery UI Keycode 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -100,7 +100,7 @@
  */
 
 /*!
- * jQuery UI Labels 1.14.1
+ * jQuery UI Labels 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -109,7 +109,7 @@
  */
 
 /*!
- * jQuery UI Mouse 1.14.1
+ * jQuery UI Mouse 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -118,7 +118,7 @@
  */
 
 /*!
- * jQuery UI Position 1.14.1
+ * jQuery UI Position 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -129,7 +129,7 @@
  */
 
 /*!
- * jQuery UI Resizable 1.14.1
+ * jQuery UI Resizable 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -138,7 +138,7 @@
  */
 
 /*!
- * jQuery UI Scroll Parent 1.14.1
+ * jQuery UI Scroll Parent 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -147,7 +147,7 @@
  */
 
 /*!
- * jQuery UI Tabbable 1.14.1
+ * jQuery UI Tabbable 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -156,7 +156,7 @@
  */
 
 /*!
- * jQuery UI Unique ID 1.14.1
+ * jQuery UI Unique ID 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -165,7 +165,7 @@
  */
 
 /*!
- * jQuery UI Widget 1.14.1
+ * jQuery UI Widget 1.14.2
  * https://jqueryui.com
  *
  * Copyright OpenJS Foundation and other contributors
@@ -173,7 +173,7 @@
  * https://jquery.org/license
  */
 
-/*! DataTables 2.0.0
+/*! DataTables 2.0.8
  * © SpryMedia Ltd - datatables.net/license
  */
 
@@ -280,3 +280,5 @@
  * Author: Miller Medeiros
  * Version: 1.0.0 - Build: 268 (2012/11/29 05:48 PM)
  */
+
+/* @license C3.js v0.4.23 | (c) C3 Team and other contributors | http://c3js.org/ */
