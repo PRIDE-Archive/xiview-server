@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_compress import Compress
 from flask_cors import CORS
 # from flask_compress import Compress
 from flask import send_from_directory
@@ -17,10 +18,7 @@ def create_app():
                 static_folder='../static', template_folder='../templates')
 
     CORS(app)
-    # Compress(app)
-
-    from xi2annotator import bp as xi2_bp
-    app.register_blueprint(xi2_bp)
+    Compress(app)
 
     @app.route('/network.html', methods=['GET'])
     def network():
