@@ -66,9 +66,11 @@
     border-left: 0;
 }
 
-/*#viewDropdownPlaceholder > div > ul > li:nth-child(10) {*/
-/*    display: none !important;*/
-/*}*/
+/* Hide 3D (NGL) and Alignment views in PRIDE deployment */
+#viewDropdownPlaceholder > div > ul > li:nth-child(3),
+#viewDropdownPlaceholder > div > ul > li:nth-child(9) {
+    display: none !important;
+}
 
 :root {
     /*--main-color:#091D42;*/
