@@ -1,12 +1,13 @@
 /* Xi Docs stylesheet — matches main app design language */
 
 :root {
-    --main-color: #091D42;
+    --main-color: rgb(55, 58, 54);
     --text:        #333;
     --muted:       #666;
     --border:      #d0d4d8;
     --bg:          #f4f5f7;
-    --content-max: 820px;
+    --link:        #1a6fa8;
+    --content-max: 1100px;
 }
 
 *, *::before, *::after {
@@ -16,7 +17,7 @@
 html {
     background: var(--bg);
     font-family: Lato-Regular, Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.65;
     color: var(--text);
 }
@@ -59,13 +60,28 @@ h3 {
 
 /* ── Links ── */
 a {
-    color: var(--main-color);
+    color: var(--link);
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
     opacity: 0.8;
+}
+
+/* ── Blockquote (citations etc.) ── */
+blockquote {
+    border-left: 4px solid var(--main-color);
+    background: rgba(55, 58, 54, 0.05);
+    margin: 1.4em 0;
+    padding: 0.7em 1.2em;
+    color: var(--muted);
+    font-size: 0.93em;
+    border-radius: 0 4px 4px 0;
+}
+
+blockquote p {
+    margin: 0;
 }
 
 /* ── Images ── */
@@ -100,7 +116,7 @@ td {
 }
 
 tr:nth-child(even) td {
-    background: rgba(9, 29, 66, 0.04);
+    background: rgba(55, 58, 54, 0.04);
 }
 
 /* ── Code ── */
