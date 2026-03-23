@@ -14,6 +14,7 @@ waitress = "*"
 zipfile_deflate64 = "*"
 #
 [dev-packages]
+Markdown = "*"
 pytest-cov = "*"
 pytest-flask = "*"
 pytest-pydocstyle = "*"

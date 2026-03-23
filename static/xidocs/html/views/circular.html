@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>circular</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
-@import url("../../docs.css");
-@import url("../docs.css");
-@import url ("/xidocs/docs.css");
-</style>
+<link rel="stylesheet" href="../../docs.css" />
 </head>
 <body>
 <h2>Circular View</h2>
-<p><img src="../../img/circular.png" alt="Circular View" /></p>
+<p><img alt="Circular View" src="../../img/circular.png" /></p>
 <h3>Representation</h3>
 <p>This view uses a Circos-like layout to display the Cross-Links. Proteins are arranged around the circumference of the circle as thick arcs of lengths proportional to protein size, and cross-links are shown as curves connecting proteins at the appropriate positions. Where possible proteins are labelled with their names, though for displays showing many proteins this is not always possible, especially for shorter proteins.</p>
 <h3>Direct Interaction</h3>
@@ -21,8 +18,8 @@
 <p>Manual ordering of multiple proteins can be performed by left-clicking on a protein representation and dragging to a new position around the circumference of the circle.</p>
 <h3>Options</h3>
 <p>There are two drop-down menus present that can affect the visual presentation of the cross-links in the circle view.</p>
-<p>The first, &quot;Order Proteins&quot;, decides the ordering of proteins around the circumference and as such is useful for multiple protein searches. The proteins may be ordered either alphabetically (default), by sequence length, or using an algorithm intended to set the protein ordering to reduce visual crossings in the display (this necessarily only reduces crossings of between cross-links, self cross-links are at set positions within a single protein).</p>
-<p>The second drop-down menu, &quot;Show&quot;, toggles on and off a set of visual preferences. These are:</p>
+<p>The first, "Order Proteins", decides the ordering of proteins around the circumference and as such is useful for multiple protein searches. The proteins may be ordered either alphabetically (default), by sequence length, or using an algorithm intended to set the protein ordering to reduce visual crossings in the display (this necessarily only reduces crossings of between cross-links, self cross-links are at set positions within a single protein).</p>
+<p>The second drop-down menu, "Show", toggles on and off a set of visual preferences. These are:</p>
 <ol>
 <li>All Proteins - for searches with many proteins the circular view can become crowded. This options dynamically removes proteins which have no cross-links that pass the currently set filter. The drawback is that changing the filter will then relayout the view i.e. proteins will very much not tend to stay in the same position.</li>
 <li>Residue Labels (If Few Links) - if only a small number of cross-links are currently displayed (around 20) then the amino acid letters can be shown at the ends of the cross-links.</li>
@@ -30,8 +27,7 @@
 <li>Links With Overlapping Peptides Opposite To Self Links - a.k.a. homomultimers... whichever side (in/out) self-links are displayed on, checking this setting will show homomultimeric cross-links on the other side.</li>
 <li>Selected Cross-Links Only - only show currently selected cross-links in this view.</li>
 </ol>
-<p>Finally, there is one remaining button which sits by itself, &quot;Download Image as SVG&quot;, which will download an SVG (vector format) file of the current state of the circular view. The filename will include information on search id and current filter settings.</p>
-
+<p>Finally, there is one remaining button which sits by itself, "Download Image as SVG", which will download an SVG (vector format) file of the current state of the circular view. The filename will include information on search id and current filter settings.</p>
 </body>
 </html>
-<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
+<!-- Generated from docs/md/views/circular.md — do not edit directly -->

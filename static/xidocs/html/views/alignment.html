@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>alignment</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
-@import url("../../docs.css");
-@import url("../docs.css");
-@import url ("/xidocs/docs.css");
-</style>
+<link rel="stylesheet" href="../../docs.css" />
 </head>
 <body>
 <h2>Alignment View</h2>
-<p><img src="../../img/alignment.png" alt="Alignment View" /></p>
+<p><img alt="Alignment View" src="../../img/alignment.png" /></p>
 <p>Search sequences in the search data can often be slightly different from the sequences for the same proteins in the Uniprot database, and often radically different to those in PDB files for the same proteins. These differences are usually due to missing end and start sequences but can also include residue differences within the sequence and misalignments. xiVIEW automatically aligns these different sequences so Uniprot annotations appear in the correct place and cross-links in the 3D view are correctly positioned. This view displays the results of these alignments for user inspection along with some controls for tweaking the alignment algorithm (Gotoh) used.</p>
 <h3>Representation</h3>
 <p>The search protein set is displayed as a set of tabs at the top of the view. Upon selection of one of these tabs, the protein it represents and the sequences associated with it are shown below the tabbed section. Each uniprot or pdb sequence is paired with the search sequence for that protein and the alignment showed as a pair of text strings. Colouring is used to represent differences between the two sequences, which can be either:</p>
@@ -33,13 +30,12 @@
 </ul>
 <p>Beneath the section that displays the current protein's sequence information is a trio of radio buttons for controlling the display of the residues in the sequence pairs. The options being</p>
 <ul>
-<li>Either the entire sequences can be shown (&quot;show all&quot;)</li>
-<li>Only the matching portions of the sequences (&quot;show similarities only&quot;)</li>
-<li>Only the different portions of the sequences (&quot;show differences only&quot;).</li>
+<li>Either the entire sequences can be shown ("show all")</li>
+<li>Only the matching portions of the sequences ("show similarities only")</li>
+<li>Only the different portions of the sequences ("show differences only").</li>
 </ul>
-<p>Resulting elided sections of the sequences are replaced with a sequence of quotation marks, whose length is logarithmically related to the length of the elided section, e.g. &quot;&quot; represents 10-100 elided residues.</p>
-<p>At the bottom of the panel are three controls for tweaking the Gotoh alignment algorithm. Both the &quot;Gap Open Penalty&quot; and the &quot;Gap Extend Penalty&quot; quantities can be changed, along with the Blosum matrix type the alignment scoring is derived from. These changes are local to the protein currently under examination in this view.</p>
-
+<p>Resulting elided sections of the sequences are replaced with a sequence of quotation marks, whose length is logarithmically related to the length of the elided section, e.g. "" represents 10-100 elided residues.</p>
+<p>At the bottom of the panel are three controls for tweaking the Gotoh alignment algorithm. Both the "Gap Open Penalty" and the "Gap Extend Penalty" quantities can be changed, along with the Blosum matrix type the alignment scoring is derived from. These changes are local to the protein currently under examination in this view.</p>
 </body>
 </html>
-<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
+<!-- Generated from docs/md/views/alignment.md — do not edit directly -->
