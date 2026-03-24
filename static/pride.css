@@ -10,10 +10,6 @@
     display: none !important;
 }
 
-#annotationsDropdownPlaceholder {
-    display: none !important;
-}
-
 #matrixChkBxPlaceholder {
     display: none !important;
 }
@@ -66,12 +62,9 @@
     border-left: 0;
 }
 
-/* Hide 3D (NGL), Alignment, Legend & Colours, Spectrum views in PRIDE deployment */
-#viewDropdownPlaceholder > div > ul > li:nth-child(1),
-#viewDropdownPlaceholder > div > ul > li:nth-child(3),
-#viewDropdownPlaceholder > div > ul > li:nth-child(6),
-#viewDropdownPlaceholder > div > ul > li:nth-child(9) {
-    /*display: none !important;*/
+/* Hide mzidentml metadata view */
+#viewDropdownPlaceholder > div > ul > li:nth-child(10) {
+    display: none !important;
 }
 
 /* Hide horizontal dividers in the Views dropdown */
