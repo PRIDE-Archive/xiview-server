@@ -1,6 +1,6 @@
-## XiNet View ##
+## xiNET View ##
 
-![Xi Net](../../img/xinet.png)
+![xiNET](../../img/xinet.png)
 
 ### Representation ###
 
