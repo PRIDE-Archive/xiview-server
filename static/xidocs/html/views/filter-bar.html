@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>filterBar</title>
+<title>filter-bar</title>
 <link rel="stylesheet" href="../../docs.css" />
 </head>
 <body>
@@ -46,9 +46,13 @@
 <h3 id="scores">Scores</h3>
 <p>This sub-section allows upper and/or lower score cut-offs for the matches to be set. These is done by entering text in the input fields or dragging on the histogram to set and move a range slider.</p>
 <p>Note that the contents of the score histogram shown here is not affected by other filter settings; to see a histogram of scores post-filtering open the <a href="./histogram.html" title="Histogram View">Histogram View</a>.</p>
-<h3 id="fdr">FDR</h3>
-<p>When the FDR mode is selected, this sub-bar allows a basic link-level FDR threshold to be set. Matches that do not pass the threshold are filtered out. Five pre-set levels are provided (1, 5, 10, 20, and 50%) along with an open-entry input for other values. FDRs are reported separately for within and between protein cross-link sets.</p>
-<p><img alt="Filter Bar FDR" src="../../img/filterBarFdr.png" /></p>
+<!--
+### FDR ###
+
+When the FDR mode is selected, this sub-bar allows a basic link-level FDR threshold to be set. Matches that do not pass the threshold are filtered out. Five pre-set levels are provided (1, 5, 10, 20, and 50%) along with an open-entry input for other values. FDRs are reported separately for within and between protein cross-link sets.
+
+![Filter Bar FDR](../../img/filterBarFdr.png)
+-->
 <h3 id="text">Text</h3>
 <p>A number of text boxes that allow matches to be filtered based on the contents of some of their attributes.</p>
 <ul>
@@ -73,12 +77,18 @@
 </ul>
 <h3 id="ppi">PPI</h3>
 <p>'Residue Pairs per PPI' (Protein-Protein Interaction) sets a threshold on the number of distinct matches between pairs of proteins that needs to be met before those matches are shown. This can be useful for quickly filtering out weakly interacting protein-protein pairs, and can tidy up the XiNet view in particular.</p>
-<h3 id="groups">Groups</h3>
-<p>If multiple searches are being visualised together, the 'Groups' section will be visible. Within this are checkboxes for each of the search group numbers defined by the user back on the history page. Unchecking will remove all matches that belong to a particular search group.</p>
+<!--
+### Groups ###
+
+If multiple searches are being visualised together, the 'Groups' section will be visible. Within this are checkboxes for each of the search group numbers defined by the user back on the history page. Unchecking will remove all matches that belong to a particular search group.
+-->
 <h3 id="summary">Summary</h3>
-<p>In the bottom left of the screen is summary information on the number of cross-links that passed the filter. If decoys were included in the uploaded data then totals will be provided for the number of target-target, target-decoy, and decoy-decoy cross-links passing the filter. For info, an 'apparent link-level FDR' is displayed based on these totals if the FDR mode and value has not been explicitly set.</p>
-<h3 id="reset-button">Reset Button</h3>
-<p>Finally, in the leftmost position of the filter bar is a button marked 'Reset'. Double-click this button to reset the filter to its initial state. If the search was loaded with a URL that included preset filter values it will reset back to these values.</p>
+<p>In the bottom left of the screen is summary information on the number of cross-links that passed the filter. If decoys were included in the uploaded data then totals will be provided for the number of target-target, target-decoy, and decoy-decoy cross-links passing the filter. For info, an 'apparent link-level FDR' is displayed based on these totals.</p>
+<!--
+### Reset Button ###
+
+Finally, in the leftmost position of the filter bar is a button marked 'Reset'. Double-click this button to reset the filter to its initial state. If the search was loaded with a URL that included preset filter values it will reset back to these values.
+-->
 </body>
 </html>
-<!-- Generated from docs/md/views/filterBar.md — do not edit directly -->
+<!-- Generated from docs/md/views/filter-bar.md — do not edit directly -->

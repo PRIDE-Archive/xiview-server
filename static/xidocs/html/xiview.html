@@ -18,9 +18,11 @@
   <ul>
     <li>Main menu - contains dropdown menus for:
       <ul>
-        <li><a href="./menu/views-menu.md">Views</a></li>
-        <li><a href="./menu/protein-selection-menu.md">Protein Selection</a></li>
-        <li><a href="./menu/export-menu.md">Export</a></li>
+        <li><a href="./load-3d-model.html">Load 3D Model</a></li>
+        <li><a href="./menu/views-menu.html">Views</a></li>
+        <li><a href="./menu/protein-selection-menu.html">Protein Selection</a></li>
+        <li><a href="./menu/annotations.html">Annotations</a></li>
+        <li><a href="./menu/export-menu.html">Export</a></li>
         <li>Help (how you got here)</li>
       </ul>
     </li>
@@ -30,22 +32,25 @@
         <li>download 2D network image</li>
       </ul>
     </li>
-    <li><a href="./views/xinet.md">xiNET 2D network viewer</a></li>
-    <li><a href="./views/selectionTable.md">Table of selected matches</a></li>
-    <li><a href="./views/filterBar.md">Filter controls</a></li>
+    <li><a href="./views/xinet.html">xiNET network viewer</a></li>
+    <li><a href="./views/selection-table.html">Table of selected matches</a></li>
+    <li><a href="./views/filter-bar.html">Filter controls</a></li>
   </ul>
 </div>
 
-<h4 id="relation-to-viewing-spectra">Relation to Viewing Spectra</h4>
-<p>The <a href="./views/selectionTable.html" title="Selected Match Table">Selected Match Table</a> acts as the bridge to the underlying raw data displayed in the <a href="https://spectrumviewer.org/help.php" title="Spectrum View">Spectrum View</a> - open the xiSpec Feature Support section in this link for spectrum viewer use instructions. Selecting a match in this table will displaying the underlying raw data in the Spectrum View.</p>
-<p>Viewing Spectra
-Open a spectrum:
-Click a link in the network view.
-See the list of supporting matches in the table of selected matches, you may need to drag upwards the bar that divides the table from the network.
-Many matches can support one crosslink, a match can also support more than one crosslink if there is ambiguity about the peptide position (protein inference problem). 
-Click a match in the table.
-The annotated spectrum should appear.
-Video Tuorial</p>
+<h2 id="opening-spectra">Opening spectra</h2>
+<p>The table of selected matches acts as the bridge to the spectra that support a crosslink. Selecting a match in this table will open the spectrum.</p>
+<ul>
+<li>click a link in the <a href="./views/xinet.html">network view</a></li>
+<li>see the list of supporting matches in the <a href="./views/selection-table.html">table of selected matches</a></li>
+<li>many matches can support one crosslink, a match can also support more than one crosslink if there is ambiguity about the peptide position (protein inference problem) </li>
+<li>click a match in the table</li>
+<li>the <a href="./views/xispec.html">annotated spectrum</a> should appear</li>
+</ul>
+<video controls width="100%">
+  <source src="../vid/open-spectrum.webm" type="video/webm">
+</video>
+
 <blockquote>
 <p>Combe, C. W., Graham, M., Kolbowski, L., Fischer, L., &amp; Rappsilber, J. (2024). xiVIEW: Visualisation of Crosslinking Mass Spectrometry Data. Journal of Molecular Biology, 436(17), 168656. <a href="https://doi.org/10.1016/j.jmb.2024.168656">https://doi.org/10.1016/j.jmb.2024.168656</a></p>
 </blockquote>

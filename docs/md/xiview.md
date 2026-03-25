@@ -36,17 +36,14 @@ The interface shown above is organised into the following panels:
 </div>
 
 ## Opening spectra
-The [Selected Match Table](./views/selectionTable.html "Selected Match Table") acts as the bridge to the underlying raw data displayed in the [Spectrum View](./xispec.html) - open the xiSpec Feature Support section in this link for spectrum viewer use instructions. Selecting a match in this table will displaying the underlying raw data in the Spectrum View.
 
-Viewing Spectra
-Open a spectrum:
-Click a link in the network view.
-See the list of supporting matches in the table of selected matches, you may need to drag upwards the bar that divides the table from the network.
-Many matches can support one crosslink, a match can also support more than one crosslink if there is ambiguity about the peptide position (protein inference problem). 
-Click a match in the table.
-The annotated spectrum should appear.
-Video Tuorial
+The table of selected matches acts as the bridge to the spectra that support a crosslink. Selecting a match in this table will open the spectrum.
 
+- click a link in the [network view](./views/xinet.html)
+- see the list of supporting matches in the [table of selected matches](./views/selection-table.html)
+- many matches can support one crosslink, a match can also support more than one crosslink if there is ambiguity about the peptide position (protein inference problem) 
+- click a match in the table
+- the [annotated spectrum](./views/xispec.html) should appear
 
 <video controls width="100%">
   <source src="../vid/open-spectrum.webm" type="video/webm">

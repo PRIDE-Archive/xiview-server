@@ -50,12 +50,13 @@ This sub-section allows upper and/or lower score cut-offs for the matches to be 
 
 Note that the contents of the score histogram shown here is not affected by other filter settings; to see a histogram of scores post-filtering open the [Histogram View](./histogram.html "Histogram View").
 
+<!--
 ### FDR ###
 
 When the FDR mode is selected, this sub-bar allows a basic link-level FDR threshold to be set. Matches that do not pass the threshold are filtered out. Five pre-set levels are provided (1, 5, 10, 20, and 50%) along with an open-entry input for other values. FDRs are reported separately for within and between protein cross-link sets.
 
 ![Filter Bar FDR](../../img/filterBarFdr.png)
-
+-->
 ### Text ###
 
 A number of text boxes that allow matches to be filtered based on the contents of some of their attributes.
@@ -75,15 +76,16 @@ A number of text boxes that allow matches to be filtered based on the contents o
 ### PPI ###
 
 'Residue Pairs per PPI' (Protein-Protein Interaction) sets a threshold on the number of distinct matches between pairs of proteins that needs to be met before those matches are shown. This can be useful for quickly filtering out weakly interacting protein-protein pairs, and can tidy up the XiNet view in particular.
-
+<!--
 ### Groups ###
 
 If multiple searches are being visualised together, the 'Groups' section will be visible. Within this are checkboxes for each of the search group numbers defined by the user back on the history page. Unchecking will remove all matches that belong to a particular search group.
-
+-->
 ### Summary ###
 
-In the bottom left of the screen is summary information on the number of cross-links that passed the filter. If decoys were included in the uploaded data then totals will be provided for the number of target-target, target-decoy, and decoy-decoy cross-links passing the filter. For info, an 'apparent link-level FDR' is displayed based on these totals if the FDR mode and value has not been explicitly set.
-
+In the bottom left of the screen is summary information on the number of cross-links that passed the filter. If decoys were included in the uploaded data then totals will be provided for the number of target-target, target-decoy, and decoy-decoy cross-links passing the filter. For info, an 'apparent link-level FDR' is displayed based on these totals.
+<!--
 ### Reset Button ###
 
 Finally, in the leftmost position of the filter bar is a button marked 'Reset'. Double-click this button to reset the filter to its initial state. If the search was loaded with a URL that included preset filter values it will reset back to these values.
+-->

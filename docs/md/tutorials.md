@@ -15,7 +15,7 @@ The following video demonstrates opening a 3D model using its four character PDB
 </video>
 
 !!! warning
-xiVIEW uses the NGL Viewer which does not support all .cif files. Specifically, it does not support the coarse grained models used by CIF-IHM. These models can be viewed using the [MolStar viewer at RCSB](#viewing-crosslinks-using-molstar-at-rscb).
+xiVIEW uses the NGL Viewer which does not support all .cif files. Specifically, it does not support models without atomic resolution, i.e. the coarse grained models used in CIF-IHM. These models can be viewed using the [MolStar viewer at RCSB](#viewing-crosslinks-using-molstar-at-rscb).
 
 ## Load AlphaFold model
 
@@ -39,7 +39,7 @@ More video tutorials are available [here](https://www.rappsilberlab.org/software
 
 ## Text Documentation
 
-Detailed documentation for xiVIEW is available [here](./xiview.html ) and via the HELP menu of the xiVIEW network page:
+More detailed documentation for xiVIEW is available [here](./xiview.html ) and via the HELP menu of the xiVIEW network page:
 
 ![finddocs](../img/find-docs.png "Where to find documentation from the xiVIEW network page.")
 
