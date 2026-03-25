@@ -38,7 +38,7 @@
                 <i class="fa fa-home fa-xi"
                         onclick="window.open('http://xi.bioanalytik.tu-berlin.de:8001/');"
                         title="Return to search history / Login"></i>
-                    <p id="pdbLoadButton" class="btn dropdown"><span class="menuTitle">LOAD 3D STRUCTURE</span></p>
+                    <p id="pdbLoadButton" class="btn dropdown"><span class="menuTitle">LOAD 3D MODEL</span></p>
                     <p id="loadDropdownPlaceholder"></p>
                     <p id="viewDropdownPlaceholder"></p>
                     <p id="proteinSelectionDropdownPlaceholder"></p>
@@ -56,7 +56,7 @@
             <div id='hiddenProteinsMessage'>
                 <p id='hiddenProteinsText'>Manually Hidden Message</p>
                 <!-- not very backbone but its only a button -->
-                <button class='btn btn-1 btn-1a showHidden' onclick="window.compositeModelInst.showHiddenProteins()">Show</button>
+                <button id="showHiddenProteinsBtn" class='btn btn-1 btn-1a showHidden'>Show</button>
             </div>
 
             <div id='newGroupName'  title="Enter group name">

@@ -7,7 +7,27 @@
 <link rel="stylesheet" href="../../docs.css" />
 </head>
 <body>
+<h2 id="export-menu">Export Menu</h2>
+<p>The Export menu provides options for downloading data from the current session in various formats. All exports reflect the current filter state — only data that passes the active filters is included.</p>
+<h3 id="as-a-csv-file">As a CSV File</h3>
+<ul>
+<li><strong>Filtered Matches</strong> — one row per match, with all match-level attributes (peptide sequences, scores, charge, scan number, etc.).</li>
+<li><strong>Filtered Crosslinks</strong> — one row per unique crosslink position, aggregated across matches.</li>
+<li><strong>Filtered PPI</strong> — one row per protein-protein interaction pair, with the count of supporting crosslinks.</li>
+<li><strong>Filtered Residues</strong> — count of filtered crosslinks per residue position.</li>
+<li><strong>Filtered Modification Count</strong> — count of each modification type across filtered matches.</li>
+<li><strong>Protein Accession list</strong> — a single-row CSV of accession numbers for all currently visible proteins.</li>
+</ul>
+<!-- - **Groups** — protein accessions with a `complex` column indicating group membership (as defined in the Groups menu).
 
+### As an SSL File ###
+
+- **Filtered Matches** — exports filtered matches in SSL format for quantitation in [Skyline](https://skyline.ms/).
+-->
+<h3 id="alphalink2">AlphaLink2</h3>
+<ul>
+<li><strong>AlphaLink2 for selected proteins</strong> — exports a CSV file and corresponding FASTA for use with <a href="https://github.com/Rappsilber-Laboratory/AlphaLink2">AlphaLink2</a> predicted structure analysis. <em>Prototype: exported FDR values are currently set to 0.05.</em></li>
+</ul>
 </body>
 </html>
 <!-- Generated from docs/md/menu/export-menu.md — do not edit directly -->

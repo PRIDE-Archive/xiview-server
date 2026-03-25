@@ -7,13 +7,13 @@
 <link rel="stylesheet" href="../../docs.css" />
 </head>
 <body>
-<h2>3D (NGL) View</h2>
+<h2 id="3d-ngl-view">3D (NGL) View</h2>
 <p><img alt="3D View" src="../../img/3d.png" /></p>
 <p>This view integrates the NGL 3D viewer (see references below) within Xi, showing the currently filtered cross-links in the context of a chosen PDB structure.</p>
-<h3>Representation</h3>
+<h3 id="representation">Representation</h3>
 <p>The majority of the panel is devoted to a 3D representation of the loaded PDB file. Proteins are shown as configurable structures with cross-links superimposed on top as elongated coloured bars. Residues at either end of the cross-links are shown as small grey spheres. Cross-links where only one end is contained within the PDB are shown as residues.</p>
 <p>Within this panel are two short pieces of textual information giving the PDB filename and the coverage it has of the proteins and cross-links in the search. This coverage can range from complete (100%) for single proteins with a fully covering PDB to tiny fractions (1-2%) for large protein complexes. The number of cross-links can similarly vary from all of the currently filtered cross-links to only a handful where a PDB covers only a small fraction of the search proteins. As a rule of thumb a PDB file that covers only 50% of the protein sequences in a search can expect to display 25% (0.5 squared) of the full link set (both residues are covered) and 50% of the remaining links with one residue covered. For 10% coverage this drops to 1% (0.1 squared) for full links and 18% for half links.</p>
-<h3>Direct Interaction</h3>
+<h3 id="direct-interaction">Direct Interaction</h3>
 <p>Positional manipulation of the view is performed by clicking anywhere on the view and dragging the mouse pointer with the following effects:</p>
 <ul>
 <li>Left-click and drag - rotates structure around XY axes (up/down drags around X axis, left/right around Y axis)</li>
@@ -33,7 +33,7 @@
 <p>A more in-depth manual for NGL is available here --&gt; <a href="http://nglviewer.org/ngl/api/manual/index.html" title="http://nglviewer.org/ngl/api/manual/index.html">NGL Manual</a></p>
 <p>Like the other views in xiVIEW, individual cross-links can be highlighted by moving the mouse pointer over them (plus a tooltip supplies details on the particular cross-link). Similarly, cross-links can be selected by using the left mouse button. In conjunction with the CTRL key, multiple cross-links can be selected (by clicking on unselected links) and currently selected cross-links can be unselected.</p>
 <p>Clicking with the left mouse button on the background of the view will clear all selections.</p>
-<h3>Options</h3>
+<h3 id="options">Options</h3>
 <p>There are a number of options available that can affect the visual presentation of the cross-links in the 3D view.</p>
 <p>The "Re-Centre" button re-centres the structure within the panel (also available by pressing "R".)</p>
 <p>There are three single selection drop-downs for choosing the parts of the PDB to display and for styling the protein structure itself. The first, "Assembly", offers a choice of which biological assembly within the PDB file to display. The default is the whole PDB structure, and other options may include UnitCell (usually the same thing), SuperCell (multiple copies of the PDB arranged spatially) and various Biological Assemblies. These Biological Assemblies can range in scale from part of the PDB, through matching the PDB exactly, up to being composed of multiple copies of the PDB - experimentation with these settings is the only way to find out for certain though details on definitions can be found at <a href="https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/biological-assemblies" title="Biological Assemblies">https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/biological-assemblies</a>.</p>
@@ -71,14 +71,14 @@
 <li>XlinkAnalyzer - produces a crosslink and a session file for visualization with the <a href="https://www.cgl.ucsf.edu/chimera/">UCSF Chimera</a> plugin XlinkAnalyzer(https://www.embl-hamburg.de/XlinkAnalyzer/XlinkAnalyzer.html) for visualizing crosslinks <em>and interactively moving</em> subunits with links displayed.</li>
 </ul>
 <p>There is one remaining button which sits by itself, "Download Image as PNG", which will download a PNG (bitmap format) file of the current state of the 3D view. A vector graphic format is not available for this view. The filename will include information on search id and current filter settings.</p>
-<h3>Using the exported files</h3>
+<h3 id="using-the-exported-files">Using the exported files</h3>
 <ul>
 <li>Pymol Command File - Place the pymol command file (.pml) in the same folder as the .pdb file you are analysing. If you have downloaded coordinates using a pdb code, then this can be anywhere in your computer, as the command file will instruct pymol to download the coordinates again. Open pymol, and from within pymol, open the command file - this will load the structure and the links. Often, it is preferable to then type the command "set dash_gap, 0" and then "set dash_width, 5", to make the crosslinks solid and more visible</li>
 <li>Haddock Distance Restraints File - this file can be used as ambiguous restraints in HADDOCK to dock multiple proteins together. Currently, this only works if each pdb file loaded into NGL viewer is made of a single chain. To obtain tables to dock protein complexes, each pdb file has to be formatted as a single chain, with non-overlapping residue numbering. </li>
 <li>Chimerax pseudobond file - The file has to have the .pb extension. Open the structure in chimerax, then in the command line of the program type open filename.pb . The crosslinks will then be rendered on the structure.</li>
 <li>XlinkAnalyzer - save the .json file and the .csv file in the same directory. Open UCSF Chimera and the XlinkAnalyzer plugin (which has to be installed separately, and then is opened from tool-&gt;utilities-&gt;XlinkAnalyzer . Open the same protein you have uploaded to the Xi session in Chimera. In the plugin window, go to file-&gt; load project. After a few seconds, it should load. Then go to "Xlinks", select the structure and click on "display all links". Crosslinks should appear. In the "Subunits" tab, individual subinits can be selected and activated for moving independently of the rest of a protein complex. Additionally, domains and regions to be moved independently can be defined in the "setup" tab. XlinkAnalyzer is powerful, for more details see their website.</li>
 </ul>
-<h3>References</h3>
+<h3 id="references">References</h3>
 <ul>
 <li>AS Rose, AR Bradley, Y Valasatava, JM Duarte, A Prlić and PW Rose. <em>NGL viewer: web-based molecular graphics for large complexes.</em> Bioinformatics: bty419, 2018. <a href="http://dx.doi.org/10.1093/bioinformatics/bty419">doi:10.1093/bioinformatics/bty419</a></li>
 <li>AS Rose and PW Hildebrand. <em>NGL Viewer: a web application for molecular visualization.</em> Nucl Acids Res (1 July 2015) 43 (W1): W576-W579 first published online April 29, 2015. <a href="https://doi.org/10.1093/nar/gkv402">doi:10.1093/nar/gkv402</a></li>

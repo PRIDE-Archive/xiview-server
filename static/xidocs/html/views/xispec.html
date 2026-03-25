@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>xispec</title>
+<link rel="stylesheet" href="../../docs.css" />
+</head>
+<body>
+<h2 id="spectrum-view-xispec">Spectrum View (xiSPEC)</h2>
+<p>The Spectrum view displays the annotated raw mass spectrum for a single selected match, allowing inspection of the underlying fragmentation data that supports a crosslink identification.</p>
+<video controls width="100%">
+  <source src="../vid/open-spectrum.webm" type="video/webm">
+</video>
+
+<h3 id="opening-the-spectrum-view">Opening the Spectrum View</h3>
+<p>Open the Spectrum view from the <a href="../menu/views-menu.html">Views menu</a>. To populate it with data, select one or more crosslinks in any view — the <a href="./selection-table.html">Selected Match Table</a> will fill with the supporting matches. Click a row in that table to load the corresponding spectrum. If the Spectrum view is already open, selecting a new crosslink automatically loads the top-scoring match.</p>
+<h3 id="representation">Representation</h3>
+<p>The spectrum is plotted as m/z (mass-to-charge ratio) on the x-axis against intensity on the y-axis. Fragment ion peaks that have been annotated are coloured by ion type (b, y, etc.); crosslink-containing fragment ions are accentuated. Unannotated peaks are shown in grey.</p>
+<p>Multiple spectra can be displayed side-by-side by opening additional spectrum panels; drag the divider between panels to resize them.</p>
+<h3 id="xispec-feature-support">xiSPEC Feature Support</h3>
+<p><strong>Zooming</strong></p>
+<p>Click and drag below the x-axis to zoom into a specific region of the spectrum, or use the mouse wheel anywhere on the plot. The annotation updates automatically after zooming.</p>
+<p><strong>Measure Distances</strong></p>
+<p>Activate measurement mode via its checkbox in the controls bar — the cursor changes to a crosshair. Click and drag between two peaks to measure the m/z distance between them. Tooltips show potential amino acid mass matches for the measured distance.</p>
+<p><strong>Move Labels</strong></p>
+<p>Enable moveable labels via checkbox. Labels can then be dragged to avoid overlap; dashed lines connect each label to its corresponding peak.</p>
+<p><strong>Change Crosslinker Position</strong></p>
+<p>Click the crosslink indicator line in the sequence diagram, then hover over the desired amino acid positions and click to confirm the new crosslink site. The spectrum annotation updates immediately.</p>
+<p><strong>Change Modification Position</strong></p>
+<p>Click a modification marker, hover over the target amino acid, and click to reassign the modification. The annotation refreshes immediately.</p>
+<p><strong>Butterfly Plot</strong></p>
+<p>After modifying a spectrum annotation (e.g. changing crosslinker or modification position), activate the butterfly plot option to display both the original and modified annotations mirrored above and below the x-axis for direct comparison.</p>
+<p><strong>Highlight Fragments</strong></p>
+<p>Hover over a fragment ion label or peak to highlight the corresponding elements across all open views. Click to make the highlight persistent. Use Ctrl+Click to select multiple fragments simultaneously. Click the spectrum background to clear all highlights.</p>
+<h3 id="settings">Settings</h3>
+<p>Two collapsible settings panels are available:</p>
+<ul>
+<li><strong>Data Settings</strong> — controls which ion types are shown, fragment mass tolerance, intensity cutoffs, and neutral loss labels.</li>
+<li><strong>Appearance Settings</strong> — controls colours for each ion type, label font size, and other visual options.</li>
+</ul>
+<h3 id="reference">Reference</h3>
+<p>Kolbowski, L., Combe, C. &amp; Rappsilber, J. xiSPEC: web-based visualization, analysis and sharing of proteomics data. <em>Nucleic Acids Research</em> 46, W473–W478 (2018). <a href="https://doi.org/10.1093/nar/gky353">https://doi.org/10.1093/nar/gky353</a></p>
+</body>
+</html>
+<!-- Generated from docs/md/views/xispec.md — do not edit directly -->
