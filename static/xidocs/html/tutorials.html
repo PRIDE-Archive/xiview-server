@@ -8,9 +8,10 @@
 </head>
 <body>
 <h1 id="xiview-videos">xiVIEW Videos</h1>
-<h2 id="opening-a-spectrum">Opening a spectrum</h2>
+<h2 id="load-alphafold-model">Load AlphaFold model</h2>
+<p>The following video demonstrates opening an AlphaFold structure for the selected protein: </p>
 <video controls width="100%">
-  <source src="../vid/open-spectrum.webm" type="video/webm">
+  <source src="../vid/load-alphafold.webm" type="video/webm">
 </video>
 
 <h2 id="load-3d-model-using-pdb-accession">Load 3D Model Using PDB Accession</h2>
@@ -23,10 +24,17 @@
 <p class="admonition-title">Warning</p>
 </div>
 <p>xiVIEW uses the NGL Viewer which does not support all .cif files. Specifically, it does not support models without atomic resolution, i.e. the coarse grained models used in CIF-IHM. These models can be viewed using the <a href="#viewing-crosslinks-using-molstar-at-rscb">MolStar viewer at RCSB</a>.</p>
-<h2 id="load-alphafold-model">Load AlphaFold model</h2>
-<p>The following video demonstrates opening an AlphaFold structure for the selected protein: </p>
+<h2 id="opening-a-spectrum">Opening a Spectrum</h2>
+<p>The table of selected matches acts as the bridge to the spectra that support a crosslink. Selecting a match in this table will open the spectrum.</p>
+<ul>
+<li>click a link in the <a href="./views/xinet.html">network view</a></li>
+<li>see the list of supporting matches in the <a href="./views/selection-table.html">table of selected matches</a></li>
+<li>many matches can support one crosslink, a match can also support more than one crosslink if there is ambiguity about the peptide position (protein inference problem) </li>
+<li>click a match in the table</li>
+<li>the <a href="./views/xispec.html">annotated spectrum</a> should appear</li>
+</ul>
 <video controls width="100%">
-  <source src="../vid/load-alphafold.webm" type="video/webm">
+  <source src="../vid/open-spectrum.webm" type="video/webm">
 </video>
 
 <h2 id="viewing-crosslinks-using-molstar-at-rscb">Viewing Crosslinks using MolStar at RSCB</h2>
