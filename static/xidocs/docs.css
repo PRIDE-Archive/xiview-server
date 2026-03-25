@@ -141,3 +141,41 @@ pre code {
     padding: 0;
     font-size: 0.87em;
 }
+
+/* ── Admonitions ── */
+.admonition {
+    margin: 1.4em 0;
+    padding: 0.7em 1.2em;
+    border-left: 4px solid #aaa;
+    border-radius: 0 4px 4px 0;
+    background: #f0f0f0;
+}
+
+.admonition p {
+    margin: 0.2em 0 0;
+}
+
+.admonition-title {
+    font-weight: bold;
+    font-size: 0.88em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+
+.admonition.note    { border-color: #1a6fa8; background: #eaf3fb; }
+.admonition.note    .admonition-title::before { content: "ℹ  "; }
+
+.admonition.tip     { border-color: #2e7d32; background: #edf7ee; }
+.admonition.tip     .admonition-title::before { content: "💡 "; }
+
+.admonition.important { border-color: #6a0dad; background: #f3eafd; }
+.admonition.important .admonition-title::before { content: "★  "; }
+
+.admonition.warning { border-color: #e6a817; background: #fdf6e3; }
+.admonition.warning .admonition-title::before { content: "⚠  "; }
+
+.admonition.caution,
+.admonition.danger  { border-color: #c0392b; background: #fdecea; }
+.admonition.caution .admonition-title::before,
+.admonition.danger  .admonition-title::before { content: "🔴 "; }

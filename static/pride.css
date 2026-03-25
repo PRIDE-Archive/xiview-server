@@ -62,11 +62,6 @@
     border-left: 0;
 }
 
-/* Hide mzidentml metadata view */
-#viewDropdownPlaceholder > div > ul > li:nth-child(10) {
-    display: none !important;
-}
-
 /* Hide horizontal dividers in the Views dropdown */
 #viewDropdownPlaceholder .sectionEnd {
     border-bottom: none !important;

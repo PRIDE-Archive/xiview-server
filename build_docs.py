@@ -16,8 +16,10 @@ import markdown
 
 DOCS_MD = Path("docs/md")
 DOCS_IMG = Path("docs/img")
+DOCS_VID = Path("docs/vid")
 OUT_HTML = Path("static/xidocs/html")
 OUT_IMG = Path("static/xidocs/img")
+OUT_VID = Path("static/xidocs/vid")
 
 TEMPLATE = """\
 <!DOCTYPE html>
@@ -45,7 +47,7 @@ def build_html():
 
         title = md_path.stem
         src = md_path.read_text(encoding="utf-8")
-        content = markdown.markdown(src, extensions=["tables", "fenced_code"])
+        content = markdown.markdown(src, extensions=["tables", "fenced_code", "admonition", "toc"])
 
         html = TEMPLATE.format(
             title=title,
@@ -73,9 +75,21 @@ def sync_images():
     return copied
 
 
+def sync_videos():
+    OUT_VID.mkdir(parents=True, exist_ok=True)
+    copied = 0
+    for vid in sorted(DOCS_VID.iterdir()):
+        if vid.is_file():
+            shutil.copy2(vid, OUT_VID / vid.name)
+            copied += 1
+    return copied
+
+
 if __name__ == "__main__":
     print("Building HTML from markdown…")
     n_html = build_html()
-    print(f"Syncing images…")
+    print("Syncing images…")
     n_img = sync_images()
-    print(f"Done: {n_html} HTML files written, {n_img} images synced.")
+    print("Syncing videos…")
+    n_vid = sync_videos()
+    print(f"Done: {n_html} HTML files written, {n_img} images synced, {n_vid} videos synced.")

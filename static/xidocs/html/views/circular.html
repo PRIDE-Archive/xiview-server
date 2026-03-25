@@ -7,16 +7,16 @@
 <link rel="stylesheet" href="../../docs.css" />
 </head>
 <body>
-<h2>Circular View</h2>
+<h2 id="circular-view">Circular View</h2>
 <p><img alt="Circular View" src="../../img/circular.png" /></p>
-<h3>Representation</h3>
+<h3 id="representation">Representation</h3>
 <p>This view uses a Circos-like layout to display the Cross-Links. Proteins are arranged around the circumference of the circle as thick arcs of lengths proportional to protein size, and cross-links are shown as curves connecting proteins at the appropriate positions. Where possible proteins are labelled with their names, though for displays showing many proteins this is not always possible, especially for shorter proteins.</p>
-<h3>Direct Interaction</h3>
+<h3 id="direct-interaction">Direct Interaction</h3>
 <p>Like the other views in xiVIEW, individual cross-links can be highlighted by moving the mouse pointer over them (plus a tooltip supplies details on the particular cross-link). Similarly, cross-links can be selected by using the left mouse button. In conjunction with the CTRL key, multiple cross-links can be selected (by clicking on unselected links) and currently selected cross-links can be unselected.</p>
 <p>Highlighting and selecting can also be performed on the protein representations. Here, selecting a protein will also select all the cross-links that connect to it. Again, in conjunction with the CTRL key, multiple proteins can be selected and deselected.</p>
 <p>Clicking with the left mouse button on the background of the view will clear all selections.</p>
 <p>Manual ordering of multiple proteins can be performed by left-clicking on a protein representation and dragging to a new position around the circumference of the circle.</p>
-<h3>Options</h3>
+<h3 id="options">Options</h3>
 <p>There are two drop-down menus present that can affect the visual presentation of the cross-links in the circle view.</p>
 <p>The first, "Order Proteins", decides the ordering of proteins around the circumference and as such is useful for multiple protein searches. The proteins may be ordered either alphabetically (default), by sequence length, or using an algorithm intended to set the protein ordering to reduce visual crossings in the display (this necessarily only reduces crossings of between cross-links, self cross-links are at set positions within a single protein).</p>
 <p>The second drop-down menu, "Show", toggles on and off a set of visual preferences. These are:</p>

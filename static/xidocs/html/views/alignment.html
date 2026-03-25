@@ -7,10 +7,10 @@
 <link rel="stylesheet" href="../../docs.css" />
 </head>
 <body>
-<h2>Alignment View</h2>
+<h2 id="alignment-view">Alignment View</h2>
 <p><img alt="Alignment View" src="../../img/alignment.png" /></p>
 <p>Search sequences in the search data can often be slightly different from the sequences for the same proteins in the Uniprot database, and often radically different to those in PDB files for the same proteins. These differences are usually due to missing end and start sequences but can also include residue differences within the sequence and misalignments. xiVIEW automatically aligns these different sequences so Uniprot annotations appear in the correct place and cross-links in the 3D view are correctly positioned. This view displays the results of these alignments for user inspection along with some controls for tweaking the alignment algorithm (Gotoh) used.</p>
-<h3>Representation</h3>
+<h3 id="representation">Representation</h3>
 <p>The search protein set is displayed as a set of tabs at the top of the view. Upon selection of one of these tabs, the protein it represents and the sequences associated with it are shown below the tabbed section. Each uniprot or pdb sequence is paired with the search sequence for that protein and the alignment showed as a pair of text strings. Colouring is used to represent differences between the two sequences, which can be either:</p>
 <ul>
 <li>Matching - no colour</li>
@@ -18,10 +18,10 @@
 <li>Missing (in the search sequence but not the compared sequence) - blue</li>
 <li>Extra (in the compared sequence but not the search sequence) - green</li>
 </ul>
-<h3>Interaction</h3>
+<h3 id="interaction">Interaction</h3>
 <p>Proteins are selected by clicking one of the named tabs at the top of the panel - this will then populate the rest of the panel with that protein's information.</p>
 <p>Moving the mouse over a Uniprot or PDB sequence will reveal details of a part of the sequence which is matching, missing or extra to the search sequence. Often, sequences are too long to view wholly within the panel so a scroll bar is provided to access the full length of the sequences.</p>
-<h3>Options</h3>
+<h3 id="options">Options</h3>
 <p>If more than one protein is present, the tab section of the panel will include a dropdown with options for sorting the tabs. These options being:</p>
 <ul>
 <li>Sort by protein name</li>
