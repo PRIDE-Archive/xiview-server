@@ -35,7 +35,7 @@ The interface shown above is organised into the following panels:
   </ul>
 </div>
 
-## Opening spectra
+## Opening Spectra
 
 The table of selected matches acts as the bridge to the spectra that support a crosslink. Selecting a match in this table will open the spectrum.
 
