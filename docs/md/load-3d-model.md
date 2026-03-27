@@ -18,7 +18,7 @@ Enter one or more 4-character PDB IDs (e.g. `1AO6`) into the text field, separat
 
 **AlphaFold**
 
-Click "AlphaFold Structure" to fetch the predicted structure for a protein from the [EBI AlphaFold database](https://alphafold.ebi.ac.uk/). Exactly one protein must be selected in the network view and it must have a valid UniProt accession number.
+Click "AlphaFold Structure" to fetch the predicted structure for a protein from the [EBI AlphaFold database](https://alphafold.ebi.ac.uk/). Exactly one protein must be selected in the network view.
 
 <video controls width="100%">
   <source src="../vid/load-alphafold.webm" type="video/webm">
