@@ -49,7 +49,6 @@ COPY templates ./templates
 COPY tests ./tests
 COPY xiview_server ./xiview_server
 COPY .env .
-COPY default.database.ini .
 COPY logging.ini .
 COPY .kubernetes.yml .
 

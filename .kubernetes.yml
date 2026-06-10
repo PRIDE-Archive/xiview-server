@@ -22,13 +22,6 @@ spec:
     spec:
       imagePullSecrets:
         - name: $DOCKER_PULL_SECRET
-      volumes:
-        - name: application-db-config
-          configMap:
-            name: $DATABASE_INI
-            items:
-              - key: database.ini
-                path: database.ini
 #        - name: xiview-server-logs-volume
 #          persistentVolumeClaim:
 #            claimName: xiview-server-logs-pvc
@@ -38,11 +31,6 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: $PORT
-          volumeMounts:
-            - name: application-db-config
-              mountPath: /home/appuser/database.ini
-              subPath: database.ini
-              readOnly: true
 #            - name: xiview-server-logs-volume
 #              mountPath: /home/appuser/logs/$app_name
 

@@ -5,28 +5,39 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="description" content="common platform for downstream analysis of CLMS data"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script type="text/javascript" src="./vendors.js"></script>
     <script type="text/javascript" src="./xiview.js"></script>
+    <link rel="stylesheet" href="./pride.css" type="text/css" />
+    <style>
+        /* Drop the spectrum panel below the page-header bar (mirrors #networkDiv top:37px). */
+        #main .mainContent { top: 37px !important; }
+        /* Hide the EXPORT dropdown in the header. */
+        #expDropdownPlaceholder { display: none !important; }
+    </style>
 </head>
 
 <body>
 <!-- Main -->
 <div id="main">
-    <div class="mainContent">
-        <div class="page-header">
-            <i class="fa fa-home fa-xi" onclick="window.location = 'http://xi.bioanalytik.tu-berlin.de:8001/';"
-               title="Return to search history"></i>
-            <span class="headerLabel">
 
-                    </span>
-            <p id="expDropdownPlaceholder"></p>
-            <button class='btn btn-1 btn-1a' onclick="window.location = './network.html'+window.location.search;"
-                    title="View results">Done
-            </button>
-        </div> <!-- page-header -->
+    <!-- Define main first so page-header overlays it -->
+    <div class="mainContent">
         <div id="topDiv"></div>
         <div id="bottomDiv"></div>
     </div>
+
+    <div class="page-header">
+        <i class="fa fa-home fa-xi" onclick="window.location = 'http://xi.bioanalytik.tu-berlin.de:8001/';"
+           title="Return to search history"></i>
+        <span class="headerLabel">
+
+                </span>
+        <button class='btn btn-1 btn-1a' onclick="window.location = './network.html'+window.location.search;"
+                title="View network">Network
+        </button>
+        <p id="expDropdownPlaceholder"></p>
+    </div> <!-- page-header -->
+
     <div class="controls">
         <span id="filterPlaceholder"></span>
     </div>
@@ -34,7 +45,8 @@
 
 <script>
     //<![CDATA[
-        xiview.validationPage("https://www.ebi.ac.uk/pride/ws/archive/crosslinking/v3/data/", "xiAnnotator/");
+    xiview.validationPage("https://www.ebi.ac.uk/pride/ws/archive/crosslinking/v3/data/", "xiAnnotator/");
+    //xiview.validationPage("http://127.0.0.1:5005/pride/ws/archive/crosslinking/v2/data/", "xiAnnotator/");
     //]]>
 </script>
 </body>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>load-3d-model</title>
+<link rel="stylesheet" href="../docs.css" />
+</head>
+<body>
+<h2 id="load-3d-model">Load 3D Model</h2>
+<p>This dialog loads a 3D protein model into xiVIEW. Once loaded, the structure is aligned to the search protein sequences and the <a href="./views/3dngl.html">3D (NGL) view</a> opens automatically, showing crosslinks superimposed on the structure. The alignment between the search sequences and the chains in the model can be viewer in the <a href="./views/alignment.html">alignment view</a> or by selecting "3D Model Aligned Region" from the <a href="./menu/annotations.html">annotations menu</a>.</p>
+<h3 id="loading-options">Loading Options</h3>
+<p><strong>Local Filesystem</strong></p>
+<p>Click "Select PDB or mmCIF Files" to choose one or more <code>.pdb</code> or <code>.cif</code> (mmCIF) files from your local disk.</p>
+<p><strong>By Accession</strong></p>
+<p>Enter one or more 4-character PDB IDs (e.g. <code>1AO6</code>) into the text field, separated by spaces, then press Enter or the submit button. The structures are fetched directly from <a href="https://www.rcsb.org/">RCSB PDB</a>.</p>
+<video controls width="100%">
+  <source src="../vid/load-3d-accession.webm" type="video/webm">
+</video>
+
+<p><strong>AlphaFold</strong></p>
+<p>Click "AlphaFold Structure" to fetch the predicted structure for a protein from the <a href="https://alphafold.ebi.ac.uk/">EBI AlphaFold database</a>. Exactly one protein must be selected in the network view.</p>
+<video controls width="100%">
+  <source src="../vid/load-alphafold.webm" type="video/webm">
+</video>
+
+<p><strong>PDB Query Service</strong></p>
+<p>Click "Show PDBs Matching UniProt Accessions @ RCSB.org" to open a pre-built RCSB search in a new tab. The query uses the UniProt accession numbers of the currently selected proteins (or all proteins if none are selected) to find relevant PDB entries.</p>
+<h3 id="results">Results</h3>
+<p>After loading, a results bar reports success or failure:</p>
+<ul>
+<li>On <strong>success</strong>: the number of sequence chains matched between the search proteins and the PDB structure is shown, and the 3D (NGL) view opens.</li>
+<li>On <strong>failure</strong>: the reason is reported (e.g. no matching sequences found, invalid PDB code, network error). Check that the PDB code is correct and that the structure contains at least one protein sequence present in the search data. </li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+</div>
+<p>xiVIEW uses the NGL Viewer which does not support all .cif files. Specifically, it does not support models without atomic resolution, i.e. the coarse grained models used in CIF-IHM. These models can be viewed using the <a href="./tutorials.html#viewing-crosslinks-using-molstar-at-rscb">MolStar viewer at RCSB</a>.</p>
+</body>
+</html>
+<!-- Generated from docs/md/load-3d-model.md — do not edit directly -->

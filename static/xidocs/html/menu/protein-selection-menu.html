@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>protein-selection-menu</title>
+<link rel="stylesheet" href="../../docs.css" />
+</head>
+<body>
+<h2 id="protein-selection-menu">Protein Selection Menu</h2>
+<p>This dropdown contains tools for controlling which proteins are visible and which are selected.</p>
+<h3 id="hide-show">Hide / Show</h3>
+<ul>
+<li><strong>Hide Selected</strong> — removes the currently selected proteins from all views. They remain in the dataset but are no longer drawn.</li>
+<li><strong>Hide Unselected</strong> — removes all proteins that are not currently selected from all views.</li>
+</ul>
+<p>To make hidden proteins visible again click 'SHOW' under the count of hidden proteins.</p>
+<p><img alt="show-hidden" src="../../img/show-hidden.png" /></p>
+<h3 id="change-selection">Change Selection</h3>
+<ul>
+<li><strong>+Neighbours</strong> — extends the current selection by adding all proteins that are directly crosslinked to any already-selected protein. Useful for iteratively exploring the local neighbourhood of a protein of interest.</li>
+</ul>
+<h3 id="select-by-text-filter">Select by Text Filter</h3>
+<p>A text input that selects proteins whose name or description contains the entered string (case-insensitive). Typing in the box and pressing Enter (or clicking elsewhere) immediately updates the selection. Entering an empty string clears the filter.</p>
+</body>
+</html>
+<!-- Generated from docs/md/menu/protein-selection-menu.md — do not edit directly -->

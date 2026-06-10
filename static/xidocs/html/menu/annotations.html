@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>annotations</title>
+<link rel="stylesheet" href="../../docs.css" />
+</head>
+<body>
+<h2 id="annotations-menu">Annotations Menu</h2>
+<p>The Annotations dropdown lists all available sequence annotation types as a set of checkboxes. Checked annotation types are displayed as coloured bars overlaid on protein sequence representations in <a href="../views/xinet.html">xiNET</a>.</p>
+<h3 id="showing-and-hiding-annotations">Showing and Hiding Annotations</h3>
+<p>Click the checkbox next to an annotation type to toggle its visibility. When an annotation type is shown, a coloured swatch appears next to its name. Clicking the swatch opens a colour picker, allowing the display colour to be changed.</p>
+<h3 id="annotation-types">Annotation Types</h3>
+<p><strong>Built-in annotations</strong> (always present):</p>
+<ul>
+<li><em>Amino Acids / Digestible</em> — marks residues that are cleavable by the enzyme used in the search, as inferred from the search data.</li>
+<li><em>3D Alignment / 3D structure aligned region</em> — marks regions of each protein sequence that align to a currently loaded 3D structure. Appears automatically after a PDB file is successfully loaded.</li>
+</ul>
+<!-- **UniProt feature annotations** — populated automatically from UniProt data embedded in the loaded search results. These include features such as domains, binding sites, active sites, post-translational modifications, and secondary structure elements, organised by UniProt feature category.
+
+**User-defined annotations** — custom annotations loaded from a CSV file via *Import → Sequence Annotations*. Each annotation type defined in the file appears here as a separate checkbox. See the [Sequence Annotations import page](../import/userannotations.html) for the expected file format.
+-->
+<h3 id="download-annotation-key-as-svg">Download Annotation Key as SVG</h3>
+<p>The "Download Annotation Key as SVG" button exports a legend of all currently shown annotation types as an SVG file. The button is disabled when no annotation types are checked.</p>
+</body>
+</html>
+<!-- Generated from docs/md/menu/annotations.md — do not edit directly -->

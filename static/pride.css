@@ -10,15 +10,7 @@
     display: none !important;
 }
 
-#annotationsDropdownPlaceholder {
-    display: none !important;
-}
-
 #matrixChkBxPlaceholder {
-    display: none !important;
-}
-
-#scatterplotChkBxPlaceholder {
     display: none !important;
 }
 
@@ -66,9 +58,10 @@
     border-left: 0;
 }
 
-/*#viewDropdownPlaceholder > div > ul > li:nth-child(10) {*/
-/*    display: none !important;*/
-/*}*/
+/* Hide horizontal dividers in the Views dropdown */
+#viewDropdownPlaceholder .sectionEnd {
+    border-bottom: none !important;
+}
 
 :root {
     /*--main-color:#091D42;*/

@@ -1,75 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>xiview</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
-@import url("../../docs.css");
-@import url("../docs.css");
-@import url ("/xidocs/docs.css");
-</style>
+<link rel="stylesheet" href="../docs.css" />
 </head>
 <body>
-<h2>xiVIEW</h2>
-<p>xiVIEW contains many different ways to view cross-link data, from circle plots, protein network views, protein sequence views and tables, to raw spectra and peak views. Data can be filtered and exported, as can images. PDB datasets can be incorporated to give physical context to the cross-links, enabling 3D and contact map views, with automatic alignment performed between Xi and PDB sequences.</p>
-<p>This documentation is divided into four logical sections:</p>
-<ol>
-<li>Filtering Data</li>
-<li>Importing MetaData</li>
-<li>Viewing Data</li>
-<li>Exporting Data</li>
-</ol>
-<h3>1. Filtering Data</h3>
-<p>One of the main benefits of XiView is the ability to filter the dataset based on various attributes. A description of the full set of the available attributes and operations can be found here on the <a href="./views/filterBar.html" title="Filter Bar">Filter Bar</a> page. Changes to the filtered dataset are immediately reflected in all open views.</p>
-<h3>2. Importing MetaData</h3>
-<p>The dataset loaded from the history page can be augmented with the addition of metadata for the cross-links and proteins. This can be performed via the 'Load' menu in the top menu bar which offers five different methods for incorporating metadata:</p>
-<ol>
-<li><a href="./import/pdbdata.html" title="PDB Data">PDB Data</a> - Load PDB data to display crystal structures and to calculate distances.</li>
-<li><a href="./import/crosslinks.html" title="Cross-Links">Cross-Links (CSV)</a> - Add additional cross-links to the ones already present.</li>
-<li><a href="./import/crossmeta.html" title="Cross-Link Metadata">Cross-Link Metadata</a> - Add metadata to the existing cross-links.</li>
-<li><a href="./import/proteinmeta.html" title="Protein Metadata">Protein Metadata</a> - Add metadata to the existing proteins.</li>
-<li><a href="./import/userannotations.html" title="User Annotations">User Annotations</a> - Add annotation ranges and types for the proteins in the search if the Uniprot annotations are not sufficient or have not been picked up.</li>
-</ol>
-<h3>3. Viewing Data</h3>
-<p>There are a number of different views available for exploring cross-links within xiVIEW. One, the XiNet view, is a constant in the main window of xiView. The others are available via the &quot;View&quot; drop-down menu in the menu bar along the top of the window.</p>
-<p>The views themselves can be categorised as three basic types:</p>
-<ul>
-<li>
-<p>Those that show positional cross-link data:</p>
-<ol>
-<li><a href="./views/xinet.html" title="Xi Net">Xi Net</a></li>
-<li><a href="./views/circular.html" title="Circular View">Circular View</a></li>
-<li><a href="./views/matrix.html" title="Matrix View">Matrix View</a> aka Contact Map</li>
-<li><a href="./views/3dngl.html" title="3D View">3D NGL View</a></li>
-<li><a href="./views/proteinInfo.html" title="Protein Info View">Protein Info View</a></li>
-</ol>
-</li>
-<li>
-<p>Those that show cross-link metadata:</p>
-<ol>
-<li><a href="./views/histogram.html" title="Histogram View">Histogram View</a></li>
-<li><a href="./views/scatterplot.html" title="Scatterplot View">Scatterplot View</a></li>
-</ol>
-</li>
-<li>
-<p>Those whose main purpose is to act as sanity checks:</p>
-<ol>
-<li><a href="./views/alignment.html" title="Alignment View">Alignment View</a></li>
-<li><a href="./views/searchSummaries.html" title="Search Summaries">Search Summaries</a></li>
-</ol>
-</li>
-</ul>
-<p>The <a href="./views/legend.html" title="Legend View">Legend View</a> can be considered in a category of its own, its main function is to choose and refine a colour scheme used in the rest of the xiVIEW interface.</p>
-<p>All views also share a number of <a href="./views/shared.html" title="Shared View Operations">common operations and functionalities</a> such as filtering and selection.</p>
-<h4>Relation to Viewing Spectra</h4>
-<p>The <a href="./views/selectionTable.html" title="Selected Match Table">Selected Match Table</a> acts as the bridge to the underlying raw data displayed in the <a href="https://spectrumviewer.org/help.php" title="Spectrum View">Spectrum View</a> - open the xiSpec Feature Support section in this link for spectrum viewer use instructions. Selecting a match in this table will displaying the underlying raw data in the Spectrum View.</p>
-<h3>4. Exporting Data</h3>
-<p><img src="../img/export.png" alt="Export Dialog" /></p>
-<p>The Export menu in the top menu bar has a number of options for outputting various aspects of the current filtered dataset. Simply click the required option and the exported file will be downloaded to your computer.</p>
-<p>Filtered cross-links, matches, protein-protein interactions, residue pairs and protein accession numbers <a href="./export/csv.html">can all be saved as CSV files</a>, and filtered matches can also be saved in Skyline's SSL format. The final option &quot;Make Filtered Xi URL&quot; offers the option to export a URL that includes the current filter state. Upon re-opening in a browser this URL will set the filter to the values in the URL as a convenient shortcut.</p>
-<h4>Exporting Images</h4>
-<p>Finally, almost every view has the option to save their current representation as a SVG or PNG file, which again includes a timestamp and filter state within the filename. Most of the exported images also include a colour key, and most views generate SVG images that include a link to return to the search.</p>
+<h1 id="xiview-help">xiVIEW Help</h1>
+<p>xiVIEW allows you to visualise crosslinking Mass Spectrometry data. It incorporates <a href="https://academic.oup.com/nar/article/46/W1/W473/4993787">xiSPEC</a> for visualising spectra and <a href="http://www.mcponline.org/content/14/4/1137.long">xiNET</a> for visualising the crosslink network. </p>
+<p>The are also demonstration <a href="./tutorials.html">videos</a>.</p>
+<p><a href="https://www.ebi.ac.uk/pride/archive/xiview/network.html?project=PXD038060">Here is an example page.</a></p>
+<p><img alt="screenshot" src="../img/screenshot.png" /> <em>In this screenshot ELP4 has been expanded to show residue resolution by right-clicking the protein and selecting Expand Protein</em></p>
+<p>The interface shown above is organised into the following panels:</p>
+<div style="display: flex; gap: 1.5em; align-items: flex-start;">
+  <img src="../img/overview.png" alt="overview" style="width: 50%;">
+  <ul>
+    <li>Main menu - contains dropdown menus for:
+      <ul>
+        <li><a href="./load-3d-model.html">Load 3D Model</a></li>
+        <li><a href="./menu/views-menu.html">Views</a></li>
+        <li><a href="./menu/protein-selection-menu.html">Protein Selection</a></li>
+        <li><a href="./menu/annotations.html">Annotations</a></li>
+        <li><a href="./menu/export-menu.html">Export</a></li>
+        <li>Help (how you got here)</li>
+      </ul>
+    </li>
+    <li>xiNET controls - buttons to:
+      <ul>
+        <li>automatically layout 2D network</li>
+        <li>download 2D network image</li>
+      </ul>
+    </li>
+    <li><a href="./views/xinet.html">xiNET network viewer</a></li>
+    <li><a href="./views/selection-table.html">Table of selected matches</a></li>
+    <li><a href="./views/filter-bar.html">Filter controls</a></li>
+  </ul>
+</div>
 
+<h2 id="opening-spectra">Opening Spectra</h2>
+<p>The table of selected matches acts as the bridge to the spectra that support a crosslink. Selecting a match in this table will open the spectrum.</p>
+<ul>
+<li>click a link in the <a href="./views/xinet.html">network view</a></li>
+<li>see the list of supporting matches in the <a href="./views/selection-table.html">table of selected matches</a></li>
+<li>many matches can support one crosslink, a match can also support more than one crosslink if there is ambiguity about the peptide position (protein inference problem) </li>
+<li>click a match in the table</li>
+<li>the <a href="./views/xispec.html">annotated spectrum</a> should appear</li>
+</ul>
+<video controls width="100%">
+  <source src="../vid/open-spectrum.webm" type="video/webm">
+</video>
+
+<blockquote>
+<p>Combe, C. W., Graham, M., Kolbowski, L., Fischer, L., &amp; Rappsilber, J. (2024). xiVIEW: Visualisation of Crosslinking Mass Spectrometry Data. Journal of Molecular Biology, 436(17), 168656. <a href="https://doi.org/10.1016/j.jmb.2024.168656">https://doi.org/10.1016/j.jmb.2024.168656</a></p>
+</blockquote>
 </body>
 </html>
-<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
+<!-- Generated from docs/md/xiview.md — do not edit directly -->
